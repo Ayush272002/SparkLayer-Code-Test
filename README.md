@@ -20,6 +20,13 @@ Open two separate terminals - one for the React app and one for the golang API
 1. In the first terminal, change to the backend directory (`cd backend`)
 2. Run `go run main.go` to start the API server
 
+OR 
+
+ ```shell
+docker build -t go-backend .
+docker run -p 8080:8080 go-backend
+```
+
 This must be running for the frontend to work
 When you make a change, you must stop the server (`ctrl-c` in the terminal), and restart it with `go run main.go`
 
